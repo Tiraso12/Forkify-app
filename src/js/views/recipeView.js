@@ -4,6 +4,8 @@ import View from './View.js';
 import icons from 'url:../../img/icons.svg'; // parcel 2
 // import { Fraction } from 'fractional';
 import fracty from "fracty";
+ing.quantity ? new Fraction(ing.quantity).toString() : ''
+ing.quantity ? fracty(ing.quantity).toString() : '';
 
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
@@ -127,5 +129,4 @@ class RecipeView extends View {
 
   }
 }
-ing.quantity ? fracty(ing.quantity).toString() : ''
 export default new RecipeView();
