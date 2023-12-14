@@ -127,5 +127,5 @@ class RecipeView extends View {
 
   }
 }
-
+ing.quantity ? fracty(ing.quantity).toString() : ''
 export default new RecipeView();
